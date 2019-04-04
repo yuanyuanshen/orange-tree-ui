@@ -1,0 +1,39 @@
+@import 'common/var.css';
+@b o {
+    @e table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        @m striped {
+            tbody tr:nth-child(even) {
+                background: #fafafa;
+            }
+        }
+    }
+}
+
+.o__table tbody tr {
+    border-bottom: 1px solid #EAEAEA;
+    transition: all .3s;
+}
+
+.o__table tbody tr:hover {
+    background: #F7FDFF;
+}
+
+.o__table tbody tr td {
+    padding: 10px 15px;
+    color: #414141;
+    font-size: 13px;
+}
+
+.o__table thead tr {
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.o__table thead tr th {
+    font-size: 13px;
+    font-weight: 600;
+    color: #5c5959;
+    padding: 15px;
+}

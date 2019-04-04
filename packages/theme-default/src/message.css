@@ -1,0 +1,48 @@
+ @import 'common/var.css';
+ @b o {
+     @e message {
+         position: fixed;
+         top: 8vh;
+         left: 50%;
+         transform: translateX(-50%) translateY(-8vh);
+         padding: 15px 30px;
+         background: #edf2fc;
+         color: #909399;
+         min-width: 200px;
+         border-radius: 4px;
+         box-sizing: border-box;
+         overflow: hidden;
+         transition: all .3s;
+         opacity: 0;
+         font-size: 14px;
+         @m success {
+             background: #f0f9eb;
+             color: #67c23a;
+             border-color: #e1f3d8;
+             border: 1px soild;
+         }
+         @m error {
+             background: #fef0f0;
+             color: #f56c6c;
+             border-color: #fde2e2;
+             border: 1px soild
+         }
+         @m warning {
+             background: #fdf6ec;
+             color: #e6a23c;
+             border-color: #faecd8;
+             border: 1px soild
+         }
+         @m info {
+             background: #edf2fc;
+             color: #909399;
+             border-color: #ebeef5;
+             border: 1px soild;
+         }
+     }
+ }
+ 
+ .o__message-active {
+     opacity: 1;
+     transform: translateX(-50%) translateY(0);
+ }

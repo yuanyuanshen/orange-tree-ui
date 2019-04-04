@@ -1,0 +1,46 @@
+@import 'common/var.css';
+@b o {
+    @e dialog {
+        background: #ffffff;
+        margin: auto auto;
+        border-radius: 2px;
+        @e wrapper {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 600;
+        }
+        @e header {
+            height: 20px;
+            font-size: 16px;
+            padding: 0px 20px;
+            line-height: 60px;
+            i.o-icon-close {
+                float: right;
+                font-size: 20px;
+            }
+        }
+        @e body {
+            padding: 30px 20px;
+            span {
+                font-size: 14px;
+                height: 80px;
+                line-height: 100px;
+            }
+        }
+        @e footer {
+            width: 100%;
+            span.dialog-footer {
+                display: block;
+                padding: 0 10px;
+                font-size: 14px;
+                height: 50px;
+                line-height: 50px;
+                text-align: right;
+            }
+        }
+    }
+}

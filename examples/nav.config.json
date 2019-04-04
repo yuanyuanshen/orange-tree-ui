@@ -1,0 +1,76 @@
+{
+    "开发指南": [{
+            "name": "guid",
+            "path": "/guid",
+            "desc": "介绍"
+        },
+        {
+            "name": "install",
+            "path": "/install",
+            "desc": "安装"
+        },
+        {
+            "name": "index",
+            "path": "/",
+            "type": "pages"
+        },
+        {
+            "name": "logs",
+            "path": "/logs",
+            "desc": "更新日志"
+        }
+    ],
+    "项目搭建": [{
+        "name": "build",
+        "path": "/build",
+        "desc": "项目搭建"
+    }],
+    "组件": [{
+            "desc": "Basic",
+            "path": "/component",
+            "items": [{
+                    "desc": "Layout 布局",
+                    "name": "layout",
+                    "path": "/layout"
+                },
+                {
+                    "desc": "Icon 图标",
+                    "name": "icon",
+                    "path": "/icon"
+                },
+                {
+                    "desc": "Button 按钮",
+                    "name": "button",
+                    "path": "/button"
+                }
+
+            ]
+        },
+        {
+            "desc": "Data",
+            "path": "/component",
+            "items": [{
+                "desc": "表格",
+                "name": "table",
+                "path": "/table"
+            }, {
+                "desc": "Tag 标签",
+                "name": "tag",
+                "path": "/tag"
+            }]
+        },
+        {
+            "desc": "View",
+            "path": "/dialog",
+            "items": [{
+                "desc": "dialog",
+                "name": "dialog",
+                "path": "/dialog"
+            }, {
+                "desc": "message 消息提示",
+                "name": "message",
+                "path": "/message"
+            }]
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+            @import 'common/var.css';
+            @b o {
+                @e button {
+                    display: inline-block;
+                    line-height: 1;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    background: var(--button-default-fill);
+                    border: var(--border-base);
+                    color: var(--button-default-color);
+                    -webkit-appearance: none;
+                    text-align: center;
+                    box-sizing: border-box;
+                    outline: none;
+                    border-radius: var(--border-radius-base);
+                    margin: 0;
+                    padding: 10px 18px;
+                    font-size: 14px;
+                    @m size-mini {
+                        padding: 6px 11px;
+                        font-size: 12px;
+                    }
+                    @m size-small {
+                        padding: 9px 15px;
+                        font-size: 12px;
+                    }
+                    @m size-medium {
+                        padding: 10px 20px;
+                        font-size: 14px;
+                    }
+                    @m size-large {
+                        padding: 12px 20px;
+                        font-size: 14px;
+                    }
+                    @m default {
+                        background: var(--button-default-fill);
+                        border: var(--border-base);
+                        color: var(--button-default-color);
+                        &:hover,
+                        &:focus {
+                            background: rgba(var(--color-primary), 0.05);
+                            border-color: rgba(var(--color-primary), 0.8);
+                            color: var(--color-primary);
+                        }
+                        &:disabled {
+                            opacity: 0.3;
+                            background: var(--button-default-fill);
+                            border: var(--border-base);
+                            color: var(--button-default-color);
+                            cursor: not-allowed;
+                        }
+                        &:active {
+                            background: var(--color-white);
+                            outline: none;
+                        }
+                    }
+                    @m primary {
+                        background: var(--color-primary);
+                        border: 1px solid var(--color-primary);
+                        color: var(--color-white);
+                        &:hover,
+                        &:focus {
+                            opacity: 0.7;
+                        }
+                        &:disabled {
+                            opacity: 0.3;
+                            cursor: not-allowed;
+                        }
+                    }
+                    @m success {
+                        background: var(--color-success);
+                        border: 1px solid var(--color-success);
+                        color: var(--color-white);
+                        &:hover,
+                        &:focus {
+                            opacity: 0.7;
+                        }
+                        &:disabled {
+                            opacity: 0.3;
+                            cursor: not-allowed;
+                        }
+                    }
+                    @m warning {
+                        background: var(--color-warning);
+                        border: 1px solid var(--color-warning);
+                        color: var(--color-white);
+                        &:hover,
+                        &:focus {
+                            opacity: 0.7;
+                        }
+                        &:disabled {
+                            opacity: 0.3;
+                            cursor: not-allowed;
+                        }
+                    }
+                    @m danger {
+                        background: var(--color-danger);
+                        border: 1px solid var(--color-danger);
+                        color: var(--color-white);
+                        &:hover,
+                        &:focus {
+                            opacity: 0.7;
+                        }
+                        &:disabled {
+                            opacity: 0.3;
+                            cursor: not-allowed;
+                        }
+                    }
+                    @m text {
+                        padding: 0;
+                        background: transparent;
+                        border: none;
+                        color: #2aafff;
+                        font-size: 13px;
+                        &:hover,
+                        &:focus {
+                            opacity: 0.7;
+                        }
+                        &:disabled {
+                            opacity: 0.3;
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+            
+            @b o {
+                @e buttonGroup {
+                    display: inline-block;
+                    button.o__button {
+                        border-radius: 0 0 0 0 !important;
+                    }
+                    button.o__button:first-child {
+                        border-radius: 4px 0 0 4px !important;
+                    }
+                    button.o__button:not(:last-child) {
+                        margin-right: -2px;
+                    }
+                    button.o__button:not(:first-child) {
+                        margin-left: -1px;
+                    }
+                    button.o__button:last-child {
+                        border-radius: 0 4px 4px 0 !important;
+                        border-left-color: hsla(0, 0%, 100%, .5);
+                    }
+                    button.o__button:not(:first-child):not(:last-child) {
+                        border-left-color: hsla(0, 0%, 100%, .5);
+                        border-right-color: hsla(0, 0%, 100%, .5);
+                    }
+                }
+            }
