@@ -1,0 +1,59 @@
+@import 'common/var.css';
+@b o {
+    @e tooltip {
+        position: relative;
+        display: inline-block;
+        @m top {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            z-index: 100;
+            transform: translateY(-130%) translateX(-50%);
+        }
+        @m text--dark {
+            padding: 10px 20px;
+            white-space: nowrap;
+            font-size: 14px;
+            background: #000;
+            color: #FFF;
+        }
+        @m text--dark::before {
+            content: "";
+            border-width: 8px 8px 0px 8px;
+            border-style: solid;
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: #000 transparent transparent transparent;
+        }
+        @m text--light {
+            padding: 10px 20px;
+            white-space: nowrap;
+            font-size: 14px;
+            background: #FFFFFF;
+            color: #000;
+            border: 1px solid #000;
+        }
+        @m text--light::before {
+            content: "";
+            border-width: 8px 8px 0px 8px;
+            border-style: solid;
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: #000 transparent transparent transparent;
+        }
+        @m text--light::after {
+            content: "";
+            border-width: 8px 8px 0px 8px;
+            border-style: solid;
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: #FFF transparent transparent transparent;
+        }
+    }
+}

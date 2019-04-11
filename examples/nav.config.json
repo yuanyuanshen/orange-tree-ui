@@ -70,6 +70,10 @@
                 "desc": "message 消息提示",
                 "name": "message",
                 "path": "/message"
+            }, {
+                "desc": "Tooltip 文字提示",
+                "name": "tooltip",
+                "path": "/tooltip"
             }]
         }
     ]
