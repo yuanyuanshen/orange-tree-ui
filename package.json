@@ -1,10 +1,14 @@
 {
     "name": "orange-tree-ui",
-    "version": "1.0.0",
+    "version": "1.0.0-6",
     "description": "A Vue.js project",
     "author": "yuanyuanshen",
     "private": false,
     "main": "packages/index.js",
+    "keywords": [
+        "orange-tree-ui",
+        "ui-component for vue"
+    ],
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
         "start": "npm run dev",

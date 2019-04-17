@@ -17,16 +17,16 @@ npm i green-orange-ui
 ---
 
 ```js
-import GreenOrangeUI from 'green-orange-ui'
-import 'green-orange-ui/packages/theme-default/lib/index.css'
+import OrangeTreeUI from 'orange-tree-ui'
+import 'orange-tree-ui/packages/theme-default/lib/index.css'
 
-Vue.use(GreenOrangeUI)
+Vue.use(OrangeTreeUI)
 
 // or
 import {
   Button
   // ...
-} from 'green-orange-ui'
+} from 'orange-tree-ui'
 
 Vue.component(Button.name, Button)
 ```
