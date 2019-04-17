@@ -4,7 +4,7 @@
       return {
         activeName:'first',
         activeName1:'second',
-        activeName2: 'third'
+        activeName2: 'fourth'
       };
     },
     methods:{
