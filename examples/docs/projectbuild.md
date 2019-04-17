@@ -264,3 +264,18 @@ npm install --save-dev gulp
 ```js
 gulp
 ```
+
+### npm 发布包
+
+```js
+# 登录
+npm login
+# 发布
+npm publish
+```
+
+**Tips: 发布到 github 上和 npm 上，注意项目中别带有敏感信息（eg：账号密码等）**
+
+因为 github 上有爬虫，可能会获取你上传的文件得到有效信息
+
+npm 包发布 24 小时后，是无法删除的，需要联系 npm 官方的管理人员删除，所以上传之前一定要检查信息，写好 ignore 文件
