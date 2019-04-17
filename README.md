@@ -1,5 +1,7 @@
 # green-orange-ui
 
+http://www.lbs-alan.cn:8080/orange-ui-publish/index.html#/build
+
 > A ui-component for vue
 
 ### Install
