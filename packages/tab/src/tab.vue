@@ -3,10 +3,11 @@
     <div class="o__tab__header">
       <div class="o__tab__wrapper">
         <div class="o__tab__item"
-             :class="{'o__tab__item--active':activeName === item}"
-             v-for="item in labelArray"
+             :class="[{'o__tab__item--active':activeName === nameArray[index],'o__tab__item--disabled':disableArray.indexOf(nameArray[index]) > -1},'o__tab__item--'+type]"
+             v-for="(item,index) in labelArray"
              :key="item"
-             @click="clickItem(item)">{{item}}</div>
+             :aaa="item"
+             @click="clickItem(nameArray[index])">{{item}}</div>
       </div>
     </div>
     <div class="o__tab__body">
@@ -21,10 +22,15 @@ export default {
   mixins: [Emitter],
   model: {
     prop: 'activeName',
-    event: 'change'
+    event: 'binder'
   },
   props: {
     type: {
+      type: String,
+      default: ''
+    },
+    // 传入的激活tab名
+    activeName: {
       type: String,
       default: ''
     }
@@ -32,8 +38,8 @@ export default {
   data () {
     return {
       labelArray: [],
-      // 传入的激活tab名
-      activeName: ''
+      nameArray: [],
+      disableArray: []
     }
   },
   mounted () {
@@ -43,15 +49,20 @@ export default {
     initLabel () {
       for (let i = 0; i < this.$children.length; i++) {
         this.labelArray.push(this.$children[i].label)
+        this.nameArray.push(this.$children[i].name)
+        if (this.$children[i].disabled) {
+          this.disableArray.push(this.$children[i].name)
+        }
       }
       if (this.labelArray.length > 0) {
-        this.activeName = this.activeName || this.labelArray[0]
-        this.broadcast('OTabPane', 'change', this.activeName)
+        const activeName = this.activeName || this.nameArray[0]
+        this.broadcast('OTabPane', 'change', activeName)
       }
     },
     clickItem (name) {
-      this.$emit('change', name)
-      this.activeName = name
+      if (this.disableArray.indexOf(name) > -1) return
+      this.$emit('binder', name)
+      this.$emit('tab-click', name)
       this.broadcast('OTabPane', 'change', name)
     }
   }

@@ -1,8 +1,8 @@
 # 项目搭建
 
-项目搭建参考 [从零开始搭建 Vue 组件库 VV-UI](http://www.cnblogs.com/tiedaweishao/p/7825997.html)
+[orange-ui 项目地址：](http://www.lbs-alan.cn:8080/orange-ui-publish/index.html#/build)http://www.lbs-alan.cn:8080/orange-ui-publish/index.html#/build
 
-[项目地址](https://vv-ui.github.io/VV-UI/#/)
+项目搭建参考 [从零开始搭建 Vue 组件库 VV-UI](http://www.cnblogs.com/tiedaweishao/p/7825997.html)
 
 记录模仿 VV-UI 组件库造轮子中遇到的问题，以及解决方案
 

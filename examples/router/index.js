@@ -65,6 +65,12 @@ export default new Router({
       path: '/tab',
       name: 'tab',
       component: r => require.ensure([], () => r(require('../docs/tab.md')))
+    },
+    {
+      path: '/dropdown',
+      name: 'dropdown',
+      component: r =>
+        require.ensure([], () => r(require('../docs/dropdown.md')))
     }
   ]
 })

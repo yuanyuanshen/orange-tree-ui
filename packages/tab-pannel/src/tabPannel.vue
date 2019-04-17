@@ -1,6 +1,6 @@
 <template>
   <div class="o__tab__pannel"
-       :class="{'o__tab__pannel--active':label==currentLabel}">
+       :class="{'o__tab__pannel--active':name==currentLabel}">
     <slot></slot>
   </div>
 </template>
@@ -13,6 +13,14 @@ export default {
     label: {
       type: String,
       default: ''
+    },
+    name: {
+      type: String,
+      default: ''
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   data () {

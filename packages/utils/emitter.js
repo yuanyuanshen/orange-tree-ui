@@ -14,7 +14,6 @@ export default {
     dispatch (componentName, eventName, params) {
       var parent = this.$parent || this.$root
       var name = parent.$options.name
-
       while (parent && (!name || name !== componentName)) {
         parent = parent.$parent
 
@@ -23,6 +22,7 @@ export default {
         }
       }
       if (parent) {
+        debugger
         parent.$emit.apply(parent, [eventName].concat(params))
       }
     },

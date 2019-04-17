@@ -2,7 +2,7 @@
 
 ---
 
-green-orange-ui 是一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
+orange-tree-ui 是一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
 
 ### 特性
 
@@ -14,4 +14,6 @@ green-orange-ui 是一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于
 
 很喜欢橘子，和橘色，一直想模仿写组件，终于开始了 orange-ui 发布到 npm 有类似名字所以改名青桔 green-orange-ui
 
-踩 JB 坑：记录自己学习过程，发现自己真的很菜 继续努力~
+再后来，我又改名了，orange-tree-ui
+
+踩坑：记录自己学习过程，发现自己真的很菜 继续努力~
