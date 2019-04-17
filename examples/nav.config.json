@@ -75,6 +75,15 @@
                 "name": "tooltip",
                 "path": "/tooltip"
             }]
+        },
+        {
+            "desc": "Nav",
+            "path": "/nav",
+            "items": [{
+                "desc": "tab 标签页",
+                "name": "tab",
+                "path": "/tab"
+            }]
         }
     ]
 }

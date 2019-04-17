@@ -4,6 +4,8 @@ import OTableColumn from './table-column/index.js'
 import OTable from './table/index.js'
 import Message from './message/index.js'
 import OTooltip from './tooltip/index.js'
+import OTabs from './tab/index.js'
+import OTabPane from './tab-pannel/index.js'
 
 const components = [
   OButton,
@@ -11,7 +13,9 @@ const components = [
   OTable,
   OTableColumn,
   ODialog,
-  OTooltip
+  OTooltip,
+  OTabPane,
+  OTabs
 ]
 
 const install = function (Vue) {
@@ -24,5 +28,23 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-export default { install, OButton, OTable, OTableColumn, ODialog, OTooltip }
-export { install, OButton, OTable, OTableColumn, ODialog, OTooltip }
+export default {
+  install,
+  OButton,
+  OTable,
+  OTableColumn,
+  ODialog,
+  OTooltip,
+  OTabPane,
+  OTabs
+}
+export {
+  install,
+  OButton,
+  OTable,
+  OTableColumn,
+  ODialog,
+  OTooltip,
+  OTabPane,
+  OTabs
+}

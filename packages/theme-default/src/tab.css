@@ -1,0 +1,36 @@
+@import 'common/var.css';
+@b o {
+    @e tab {
+        @e header {
+            padding-bottom: 10px;
+        }
+        @e wrapper {
+            position: relative;
+            border-bottom: 2px solid #e4e7ed;
+        }
+        @e item {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 40px;
+            padding: 10px 0;
+            margin-bottom: -1px;
+            @m active {
+                color: #409eff;
+                border-bottom: 2px solid #409eff;
+            }
+        }
+    }
+}
+
+@b o {
+    @e tab {
+        @e pannel {
+            display: none;
+            padding: 20px 0;
+            font-size: 14px;
+            @m active {
+                display: block;
+            }
+        }
+    }
+}
